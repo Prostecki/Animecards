@@ -19,9 +19,11 @@ let requestObj = new XMLHttpRequest();
         margin-bottom: 20px;
         width: 200px;
         height: 330px;
+        min-width: 200px;
         object-fit: fill;
         border-radius: 10px;
-        box-shadow: 3px 5px 10px black;">
+        box-shadow: 3px 5px 10px black;
+        flex-shrink: 0;">
         <div style="color: black; width: 60px; height: 25px; line-height: 25px; background-color: yellow; text-align: center; border: 1px solid black; box-sizing: border-box; border-radius: 10px; box-shadow: 2px 5px 10px black;">R: 
             ${array['data'][i]['attributes']['averageRating']}
         </div>
