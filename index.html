@@ -15,18 +15,51 @@
         <div class="header">
             <div class="menu">
                 <div class="pictheme"></div>
+                <div class="head-name">GoGoAnime<span style="color: brown; font-size: 45px;">.TV</span></div>
                 <div class="nav">Genres</div>
                 <div class="nav">Series</div>
                 <div class="nav">Films</div>
-                <div class="nav">TOP 100</div>
+                <div class="nav">Top 100</div>
                 <div class="nav">Announcement</div>
             </div>
         </div>
-        <div class="content">
-            <div id="pic" class="cards"></div>
+        <div id="content" class="content">
         </div>
-        <div id="footer"></div>
+        <div class="bottom" id="footer">
+            <div>Copyright 2022 | <em style="color: grey;">Anime Cards</em> Mark Taratynov</div>
+        </div>
     </div>
+    <template id="tmpl-catalog">
+        <div id="anime-box">
+            <div class="name">${title}</div>
+            <img class="pic" onclick="renderCard(${id})" src="${photo}">
+            <div class="rating">★ ${rating}</div>
+            <div class="ep-count">${count} episodes</div>
+        </div>
+    </template>
+    <template id="tmpl-card">
+        <div id="anime-card">
+            <div class="button-back" onclick="renderCatalog()">Back</div>
+            <div class="onecard">
+                <img class="card-img" src="${photo}">
+                <div class="card-rating">★ ${rating}</div>
+                <div class="card-ep-count">${count} ep</div>
+            </div>
+            <div class="describe">
+                <div class="card-name">${title}</div>
+                <ul class="list-style">
+                    <li class="margin-list li-style" style="background: black">Release: ${year}</li>
+                    <li class="margin-list li-style">End date: ${end}</li>
+                    <li class="margin-list li-style"style="background: black">Rating rank: ${ratingRank}</li>
+                    <li class="margin-list li-style">Views: ${views}</li>
+                    <div><h1>Description</h1>
+                        <p>${description}</p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        
+    </template>
 <script src="js/script.js"></script>
 </body>
 </html>
