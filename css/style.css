@@ -254,9 +254,14 @@ div, h1, p, a {
     position: absolute;
     top: 0px;
     left: 40px;
+    transition: all 0.6s;
+
 }
 
-
+.button-back:hover {
+    transition: all 0.6s;
+    background-color: #201c13;
+}
 
 
 
