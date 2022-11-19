@@ -16,11 +16,9 @@
             <div class="menu">
                 <div class="pictheme"></div>
                 <div class="head-name">GoGoAnime<span style="color: brown; font-size: 45px;">.TV</span></div>
-                <div class="nav">Genres</div>
-                <div class="nav">Series</div>
-                <div class="nav">Films</div>
-                <div class="nav">Top 100</div>
-                <div class="nav">Announcement</div>
+                <div class="nav" onclick="renderCatalog()">Catalog</div>
+                <div class="nav" onclick="renderAboutMe()">About us</div>
+                <div class="nav" onclick="renderContacts()">Contacts</div>
             </div>
         </div>
         <div id="content" class="content">
@@ -58,7 +56,32 @@
                 </ul>
             </div>
         </div>
-        
+    </template>
+    <template id="aboutus">
+        <div class="aboutus">
+            <p class="about-text">We are the most popular streaming - service of Anime. Also we give the most popular content and develop our community. If you have any questions, you can go to category "contacts", and also you can subscribe for our daily notifications about content.</p>
+        </div>
+    </template>
+    <template id="contacts">
+        <div class="window-links">
+            <div class="links">
+                <img src="img/telegram_icon.png" alt="">
+                <a href="">@kakoito4el90</a>
+            </div>
+            <div class="links">
+                <img src="img/instagram_icon.png" alt="">
+                <a href="">@neskajuadres90</a>
+            </div>
+            <div class="links">
+                <img src="img/youtube_icon.png" alt="">
+                <a href="">@tojesamoe90</a>
+            </div>
+            <div class="links">
+                <img src="img/twitter_icon.png" alt="">
+                <a href="">@pti4kasvistit90</a>
+            </div>
+            <p class="contacts-text">“We are all like fireworks: We climb, we shine and always go our separate ways and become further apart. But even when that time comes, let’s not disappear like a firework and continue to shine… forever.” — Hitsugaya Toshiro (Bleach)</p>
+        </div>
     </template>
 <script src="js/script.js"></script>
 </body>
